@@ -66,9 +66,9 @@ while gameOn:
     # render_end soustraction avec render_start pour avoir le temps ecouler entre le debut et la fin 
     # render rendu visuel, calcul visuel 
     # sleep switch a la frame suivante
-    render_end = time.time()
+    render_end  = time.time()
     render_time = render_end - render_start
-    sleep_time = FRAME_DURATION - render_time
+    sleep_time  = FRAME_DURATION - render_time
     if render_time < FRAME_DURATION:
         time.sleep(sleep_time)
     pygame.display.flip()
